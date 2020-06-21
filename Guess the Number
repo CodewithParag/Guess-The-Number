@@ -1,0 +1,19 @@
+i=15
+guessing_chance=1
+print("Welcome to the number guessing game\n")
+print("Hey, you will get 9 chances to guess the number-")
+while(guessing_chance<=9):
+    Guess_number=int(input("Please guess the number:\n"))
+    if Guess_number<15:
+        print("Sorry, you have entered a lesser number\n",)
+    elif Guess_number>15:
+        print("Sorry, you have entered a higher number\n")
+    else:
+        print("Congratulations, You Guess the correct number, You Won!!\n")
+        print(guessing_chance, "chances to guess the number")
+        break
+    print(guessing_chance,"times taken")
+    print(9-guessing_chance,"chances left to guess the number")
+    guessing_chance=guessing_chance+1
+if(guessing_chance>9):
+        print("Game Over Dude!!\n")
